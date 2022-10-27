@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+video {
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 60px);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+}
+
+.hero-head {
+    margin-top: 15%;
+    font-size: 3rem;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.start {
+    color: white;
+    background-color: transparent;
+    height: 40px;
+    width: 180px;
+    margin-right: 10px;
+    font-weight: 900;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.start:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.watch {
+    color: black;
+    background-color: trans;
+    height: 40px;
+    width: 180px;
+    font-weight: 900;
+    cursor: pointer;
+    outline: 0px;
+    border: 1px solid white;
+}
+
+.watch:hover {
+    color: white;
+    background-color: black;
+}
+
+@media(max-width: 700px){
+    .start {
+        display: block;
+    }
+    
+    .watch {
+        display: block;
+        margin-top: 6px;
+    }
+
+    .hero-head {
+        margin-top: 33%;
+        font-size: 2rem;
+    }
+
+}
+
+@media(max-width: 400px) {
+    .hero-head {
+        font-size: 1.4rem;
+    }
+}

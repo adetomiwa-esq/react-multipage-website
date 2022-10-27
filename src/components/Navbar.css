@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.fa-bolt {
+    font-size: 1.3rem;
+    color: blue;
+}
+
+.fa-globe {
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+.comp-logo {
+    align-self: center;
+    font-size: 2rem;
+    margin-left: 4%;
+}
+
+.nav {
+    display: flex;
+    height: 60px;
+    background: black;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: auto;
+    width: 25%;
+    list-style-type: none;
+    height: 100%;
+}
+
+.nav-links > .link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    width: 33.33%;
+    justify-content: center;
+}
+
+.nav-links > .link:hover {
+    border-bottom: 4px solid white;
+    transition: all 500ms ease;
+    margin-bottom: 2px;
+}
+
+.nav-links > .link > li {
+    align-self: center;
+}
+
+.mobile-toggle {
+    display: none;
+}
+
+.nav-links > .sign-up {
+    display: none;
+}
+
+.sign-up-link {
+    align-self: center;
+}
+
+.sign-up-button {
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 5px 8px;
+    outline: 0px;
+    border-radius: 5px;
+    margin-right: 35px;
+    border: 1px solid white;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+.sign-up-button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media(max-width: 900px){
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: -2000%;
+        background-color: black;
+        flex-direction: column;
+        height: calc(100vh - 60px);
+        width: 100%;
+        align-items: center;
+        opacity: 0;
+        transition: all 1000ms ease-out;
+    }
+
+    .sign-up-link {
+        display: none;
+    }
+
+    .nav-links-display {
+        left: 0px;
+        transition: all 500ms ease-in-out;
+        opacity: 1;
+        overflow-y: hidden;
+    }
+
+
+    .nav-links > .link {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        height: 25%;
+    }
+
+    .nav-links > .link:hover {
+        background-color: white;
+        transition: all 500ms ease;
+        color: black;
+    }
+
+    .nav-links > .sign-up {
+        width: 80%;
+        display: block;
+        display: flex;
+        border-radius: 8px;
+        margin-bottom: 10%;
+    }
+
+    .nav-links > .sign-up:hover {
+        background-color: white;
+        transition: all 500ms ease;
+        color: black;
+        font-size: 1.4rem;
+        border-bottom: 0px;
+    }
+
+    .mobile-toggle {
+        display: block;
+        font-size: 1.3rem;
+        align-self: center;
+        margin-right: 5%;
+        cursor: pointer;
+        margin-left: auto;
+    }
+}
